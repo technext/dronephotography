@@ -1,0 +1,120 @@
+.services-section{
+    &.services-section2{
+        margin-top: -85px;
+        @media #{$md}{
+            margin-top: 0px;
+        }
+        @media #{$sm}{
+            margin-top: 0px;
+        }
+        @media #{$xs}{
+            margin-top: 0px;
+        }
+    }
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        .cat-icon{
+            img{
+                margin-bottom: 30px;
+                width: 100%;
+            }
+        }
+        .cat-cap{
+            span{
+                color: #6785FF;
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+            }
+            h5{
+             & > a{
+                font-size: 30px;
+                font-weight: 400;
+                color: #071112;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+                display: block;
+                @include transition(.2s);
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+            p{
+                color:#707070;
+                font-size: 16px;
+                line-height: 1.6;
+                margin: 0;
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+
+            }
+       }
+    }
+}
+// Arrow
+.services-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 29%;
+            transform: translateY(-29%);
+            left: auto;
+            background: none;
+            padding: 14px 11px;
+            line-height: 1;
+            background: #fff;
+            box-shadow: 0px 7px 21px 0px rgba(0,0,0,0.12);
+            i{
+                font-size: 20px;
+                color: $theme-color;
+                @include transition(.2s);
+               
+            }
+            &:hover{
+                background: #000;
+                i{
+                    color: #fff;
+                }
+            }
+        }
+        &.slick-prev {
+            left: 0px;
+            // i{
+            //     color: #ddd;
+            // }
+        }
+        &.slick-next {
+            right: 0px;
+            // i{
+            //     color: #ddd;
+            // }
+        }
+    }
+    
+}
+

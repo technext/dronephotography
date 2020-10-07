@@ -1,0 +1,89 @@
+.single-job-items{
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    @include transition(.4s);
+    @media #{$md}{
+    }
+    @media #{$sm}{
+    }
+    .job-items{
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include align-items(center);
+    }
+    .company-img{
+        img {
+            overflow: hidden;
+            float: left;
+            margin-right: 32px;
+            z-index: 999;
+            @media #{$sm}{
+                margin-bottom: 20px;
+            }
+            @media #{$xs}{
+                margin-bottom: 20px;
+            }
+        }
+    } 
+    .job-tittle{
+        @media #{$xs}{
+            padding: 14px;
+        }
+        @media #{$sm}{
+            padding: 14px;
+        }
+        a{
+            h4{
+                color: #454d72;
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 26px;
+                @include transition(.4s);
+                &:hover{
+                    color:$theme-color;
+                }
+            }
+        }
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 48px;
+                font-size: 15px;
+                color: #808080;
+                line-height: 1.8;
+                @media #{$md}{
+                    margin-right: 18px;
+                }
+                @media #{$xs}{
+                    margin-right: 0px;
+                    margin-bottom: 7px;
+                }
+                @media #{$sm}{
+                    margin-right: 8px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+                i {
+                    font-size: 14px;
+                    color: #bbbbbb;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .job-tittle2{
+        @media #{$md}{
+            padding-top: 25px;
+        }
+    }
+    // Hover 
+    &:hover{
+        box-shadow: 0px 22px 57px 0px rgba(34, 41, 72, 0.05);
+    }
+
+}
+
+
+

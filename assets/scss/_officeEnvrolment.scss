@@ -1,0 +1,56 @@
+
+.office-environments {
+	background: #EEF6FF;
+    margin: 0 15px;
+    .environments-wrapper {
+        margin-top: -100px;
+        position: relative;
+        z-index: 1;
+
+        &.environments-wrapper2{
+            margin-top: 0px;
+        }
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        @media #{$md}{
+            margin-top: 0px;
+            background-image: none !important;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @media #{$sm}{
+            margin-top: 0px;
+            background-image: none !important;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @media #{$xs}{
+            margin-top: 0px;
+            background-image: none !important;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+    }
+    .office-pera {
+        padding: 85px 81px 68px 72px;
+        background: #ffff;
+        @media #{$md}{
+           margin-top: 20px;
+        }
+        @media #{$sm}{
+            padding: 65px 46px 24px 50px;
+        }
+        @media #{$xs}{
+            padding: 44px 15px 1px 15px;
+        }
+      }
+}
+
+.section-bg02 {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+}

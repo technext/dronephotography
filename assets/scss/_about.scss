@@ -1,0 +1,181 @@
+.about-low-area{
+    position: relative;
+    &.about-low-area2{
+        &::before{
+            position: unset;
+            background: none;
+        }
+    }
+    &::before{
+        position: absolute;
+        background: #F8F8FC;
+        content: "";
+        height: 109%;
+        width: 66%;
+        top: 0;
+        left: 0;
+        @media #{$laptop}{
+            width: 80%;
+        }
+        @media #{$lg}{
+            width: 80%;
+        }
+        @media #{$md}{
+            width: 100%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        @media #{$xs}{
+            width: 100%;
+        }
+    }
+
+    // left content
+    position: relative;
+    .about-caption{
+        // @media #{$md}{
+        //     padding-top: 50px;
+        //    }
+        //    @media #{$sm}{
+        //        padding-top: 50px;
+        //    }
+        //    @media #{$xs}{
+        //        padding-top: 20px;
+        //    }
+        p.about-cap-top{
+            font-size: 20px;
+            color: #071112;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding-right: 50px;
+            font-weight: 500;
+        }
+         p{
+            font-size: 16px;
+            color: #071112;
+            line-height: 1.6;
+            margin-bottom: 58px;
+            padding-right: 50px;
+            @media #{$lg}{
+                padding-right: 20px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+        }
+
+    }
+     
+    // left img
+    .about-right-cap{
+        position: relative;
+        @media #{$xs}{
+            padding-top: 50px;
+           
+        }
+        @media #{$md}{
+            padding-top: 50px;
+        }
+        @media #{$lg}{
+            padding-top: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 50px;
+        }
+        .about-right-img{
+            img{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        .img-cap{
+            position: absolute;
+            bottom: -7px;
+            left: -33px;
+            width: 197px;
+            height: 180px;
+            padding: 31px 10px;
+            background: $theme-color;
+            text-align: center;
+            @media #{$xs}{
+                left: 0;
+                width: 168px;
+                height: 145px;
+                padding: 8px 10px;
+            }
+            &::before{
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 19px 0px 46px 43px;
+                border-color: transparent transparent #FF5F21 transparent;
+                position: absolute;
+                top: -65px;
+                content: "";
+                right: 0;
+            }
+            span{
+                font-family:$font_1;
+                color: #fff;
+                font-size: 50px;
+                font-weight: 600;
+                margin-bottom: 14px;
+                display: block;
+            }
+            p{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+        }
+        p{
+            font-size: 22px;
+            color: #140C40;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .about-right-cap2{
+            margin-bottom: 0px;
+            @media #{$xs}{
+                margin-bottom: 0px;
+            }
+            @media #{$md}{
+                margin-bottom: 0px;
+            }
+            @media #{$sm}{
+                margin-bottom: 0px;
+            }
+            @media #{$sm}{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.about-caption{
+    @media #{$xs}{
+        margin-bottom: 35px;
+    }
+	
+}
+.bg-height.pb-160{
+    @media #{$xs}{
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+// 
+
+
+
+  

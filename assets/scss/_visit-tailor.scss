@@ -1,0 +1,134 @@
+.visit-tailor-area{
+    background: #ffff;
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-details{
+        width: 32%;
+        padding: 20px 20px 20px 120px;
+        @media #{$lg}{
+            width: 53%;
+            padding: 47px 20px 0px 50px;
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 84%;
+            padding: 50px 50px;
+        }
+        @media #{$sm}{
+            width: 90%;
+            padding: 51px 50px 20px 50px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 51px 20px 20px 20px;
+        }
+        span{
+            margin-bottom: 20px;
+            display: block;
+            color: #70D76A;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 55px;
+            display: block;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            @media #{$laptop}{
+                font-size: 35px;
+            }
+            @media #{$lg}{
+                font-size: 35px;
+            }
+            @media #{$sm}{
+                font-size: 50px;
+            }
+            @media #{$xs}{
+                font-size: 27px;
+            }
+        }
+        p{
+            font-size: 19px;
+            color: #071112;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-weight: 500;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+        }
+        p.pera-bottom{
+            margin-bottom: 41px;
+            font-size: 16px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+        }
+        .footer-tittles{
+            h2 {
+                font-size: 57px;
+                font-weight: 400;
+                font-size: 45px;
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+                 @media #{$xs}{
+                    font-size: 31px;
+                }
+                
+            }
+            p {
+                padding-bottom: 22px;
+                color: #1D2547;
+                font-size: 16px;
+            }
+        }
+         
+    }
+    // -Right Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg.png);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 595px;
+        width: 48%;
+         @media #{$lg}{
+            height: 569px;
+            width: 61%;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 420px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 320px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 250px;
+        }
+    }
+}
+
+// Progress Bar
+
+

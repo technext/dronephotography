@@ -1,0 +1,174 @@
+
+.footer-wrapper{
+    position: relative;
+}
+.footer-area{
+    .footer-pera{
+        p{
+            color:#DBDBDB;
+            font-size: 16px;
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+        &.footer-pera2 p{
+            padding: 0;
+        }
+    }
+    .footer-tittle{
+        h4{
+            color: #FF5F21;
+            font-size: 20px;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        ul{
+            li{
+                margin-bottom: 15px;
+                 a{
+                    color: #DBDBDB;
+                    font-weight: 300;
+                    font-size: 16px;
+                    text-decoration: underline transparent;
+                    &:hover{
+                        color: #FF5F21;
+                        text-decoration: underline;
+                    }
+                   
+                }
+                span{
+                    color: red;
+                }
+            }
+        }
+        p{
+            color: #DBDBDB;
+            font-size: 16px;
+        }
+    }
+    .footer-form{
+        margin-top: 40px;
+        form{
+            position: relative;
+            input{
+                width: 100%;
+                height: 43px;
+                padding: 10px 20px;
+                border: 1px solid #fff;
+                background: no-repeat;
+                color: #DBDBDB;
+                border-radius: 30px;
+            }
+            .form-icon{
+                button{
+                    border: 0;
+                    cursor: pointer;
+                    padding: 13px 22px;
+                    background: $theme-color;
+                    line-height: 1;
+                    width: 100%;
+                    display: block;
+                    margin-top: 24px;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+    .info.error {
+        color:  $theme-color;
+    }
+}
+
+
+//copy Right 
+.footer-bottom-area {
+    .footer-border{
+        // border-top: 1px solid #d7e7fe;
+        padding-top: 70px;
+        padding-bottom: 1px;
+        @media #{$md}{
+            padding-top:0;
+        }
+        @media #{$sm}{
+            padding-top:0;
+        }
+        @media #{$xs}{
+            padding-top:0;
+        }
+    }
+    .footer-copy-right{
+        p{
+            color: #DBDBDB;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 2;
+            i{
+                color: $theme-color;
+            }
+            a{
+                color: $theme-color;
+                &:hover{
+                    // color: #C2C5DB;
+                }
+                 
+            }
+        }
+    }
+}
+
+// footer social
+.footer-social{
+    a{
+        color:$theme-color;
+        background: rgba(255, 95, 33,.06);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 8px;
+        i{
+            @include transition(.4s);
+            display:inline-block;
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg)
+        }
+
+        &:hover{
+            color: #fff;
+            background: #FF5F21;
+            i{
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg); 
+            }
+        }
+
+    }
+}
+.number a {
+    font-family: $font_1;
+	font-size: 26px !important;
+	color:#FF5F21 !important;
+	margin-bottom: 0px;
+    display: block;
+    @media #{$md}{
+        font-size: 19px !important;
+    }
+}
+.number2 a {
+    font-family: $font_1;
+	font-size: 14px !important;
+	color: #FF5F21 !important;
+	margin-bottom: 23px;
+    display: block;
+    @media #{$md}{
+        font-size: 19px !important;
+    }
+}
